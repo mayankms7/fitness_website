@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank's Fitness Adda</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        /* Css Reset  */
+        font-family: 'Baloo 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("bg.jpg");
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        left: 50px;
+        top: 15px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 150px;
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 10px;
+        font-size: 16px;
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 30px;
+        top: 30px;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+        background-color: gray;
+        border-radius: 7px;
+        padding: 7px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 15px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(121, 0, 0);
+        font-size: 20px;
+    }
+    .btn{
+        margin: 0px 10px;
+        color: white;
+        background-color: black;
+        padding: 5px 18px;
+        border: 5px solid gray;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 17px;
+        font-family: 'Baloo 2', cursive;
+    }
+    .btn:hover{
+        background-color:rgb(121, 0, 0);
+    }
+    .container{
+        border: 3px solid gray;
+        margin: 96px;
+        padding: 30px 50px;
+        border-radius: 25px;
+        width: 36%;
+    }
+    .form-grp input{
+        text-align: center;
+        font-size: 20px;
+        display: block;
+        padding: 2px;
+        margin: 10px auto;
+        border-radius: 15px;
+        font-family: 'Baloo 2', cursive;
+        width: 500px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 35%;
+        margin: 15px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="Logo.jpg" alt="">
+            <div>Mayank's Fitness Adda</div>
+        </div>
+        <div class="mid">
+            <!-- mid for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right for buttons -->
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join best gym in Gwl !!!</h1>
+        <form action="noaction.php">
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Contact">
+            </div>
+            <div class="form-grp">
+                <input type="text" placeholder="Enter your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
